@@ -15,15 +15,17 @@ To prove it, in this lab, we're going to build our own version of `fetch()`!
 
 ## Instructions
 
-In `index.js`, write a function `myFetch()` that takes does the following:
+In `index.js`, write a function `myFetch()` that does the following:
 
 - takes in a URL
 - returns a `Promise`
 
-Inside this function, write the necessary XHR code to handle retrieving data
-with the provided URL. If the request is successful, use `resolve()`, passing
-in the resulting response text. If unsuccessful, use `reject()`, passing in
-the _status_ text.
+Inside the `Promise`, write the appropriate XHR code so that:
+
+- an XHR GET request to the provided URL is sent
+- if the XHR request loads successfully, `resolve()` is called, passing in the
+  XHR response
+- if the request errors, `reject()` is called, passing in `new Error()`
 
 Run `learn` to see your progress.
 
