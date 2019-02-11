@@ -35,4 +35,4 @@ If you've passed all the tests, you've just built your own version of `fetch()`!
 Now, you may find yourself relying on `fetch()` a lot when developing, and that
 is perfectly fine. It is an easy and concise way to get data we want. However,
 you're not limited to using it alone. Behind the scenes, `fetch()` is simply
-XHR wrapped in a Promise.
+XHR wrapped in a `Promise`.
